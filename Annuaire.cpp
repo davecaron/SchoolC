@@ -60,7 +60,7 @@ string Annuaire::reqAnnuaireFormate() const
 
 bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const;
 {
-	for(unsigned int i = 0; i < m_Membres.size(); i++)
+	for(unsigned int i = 0; i < m_vMembres.size(); i++)
 	{
 		if (m_Membres[i] == p_personne)
 		{
@@ -83,8 +83,14 @@ void Annuaire::ajouterPersonne(const Personne& p_personne)
 	PRECONDITION(validerFormatNom(p_personne.reqNom()) == true)
 	PRECONDITION(validerFormatNom(p_personne.reqPrenom()) == true)
 	PRECONDITION(validerTelephone(p_personne.reqTelephone()) == true)
-	m_vMembres.push_back(p_personne.clone());
-
+	if (ici.PersonneEstDejaPresente(p_personne))
+	{
+	#ici charles ici watashi no fuuka
+	}
+	else
+	{
+		m_vMembres.push_back(p_personne.clone());
+	}
 }
 
 }
