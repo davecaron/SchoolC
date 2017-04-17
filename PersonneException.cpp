@@ -1,8 +1,10 @@
 #include "PersonneException.h"
 
-using namespace std;
-
 namespace tp
 {
- PersonneException::PersonneException
+ using namespace std;
+ PersonneException::PersonneException(const string& raison)
+ :
+ {
+ }
 }
