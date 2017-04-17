@@ -59,9 +59,19 @@ string Annuaire::reqAnnuaireFormate() const
 }
 
 bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const;
+{
+	for(unsigned int i = 0; i < m_Membres.size(); i++)
 	{
-		
+		if (m_Membres[i] == p_personne)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
+}
 	
 /**
  * \brief Ajoute une nouvelle personne à l'annuaire
