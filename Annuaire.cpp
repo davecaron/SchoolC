@@ -82,12 +82,36 @@ void Annuaire::ajouterPersonne(const Personne& p_personne)
 	PRECONDITION(validerTelephone(p_personne.reqTelephone()) == true)
 	if (*this.PersonneEstDejaPresente(p_personne))
 	{
-	#ici charles ici watashi no fuuka
+	//ici charles ici watashi no fuuka
 	}
 	else
 	{
 		m_vMembres.push_back(p_personne.clone());
 	}
 }
+	
+	void supprimerPersonne (const std::string& p_nom, const std::string& p_prenom); 
+	{
+		for (unsigned i = 0; i < m_nMembres.size(); i++)
+		{
+			if ((m_nom == m_nMembres.reqNom() && m_prenom == m_nMembres.reqPrenom())
+			    {
+				    
+				    delete m_nMembres[i];    //ici c'est sketch
+					    
+				        m_vMembres.erase(i);
+			    }
+		}
+		//exeception personne not found ici
+	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
