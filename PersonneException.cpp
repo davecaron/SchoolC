@@ -1,1 +1,8 @@
+#include "PersonneException.h"
 
+using namespace std;
+
+namespace tp
+{
+ 
+}
