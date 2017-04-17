@@ -38,6 +38,9 @@ protected:
 	std::string m_nomClub;
 	std::vector<Personne*> m_vMembres;
 
+private:
+	bool PersonneEstDejaPresent(const Personne& p_personne) const;
+
 };
 }
 
