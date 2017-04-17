@@ -83,7 +83,7 @@ void Annuaire::ajouterPersonne(const Personne& p_personne)
 	PRECONDITION(validerFormatNom(p_personne.reqNom()) == true)
 	PRECONDITION(validerFormatNom(p_personne.reqPrenom()) == true)
 	PRECONDITION(validerTelephone(p_personne.reqTelephone()) == true)
-	if (ici.PersonneEstDejaPresente(p_personne))
+	if (*this.PersonneEstDejaPresente(p_personne))
 	{
 	#ici charles ici watashi no fuuka
 	}
