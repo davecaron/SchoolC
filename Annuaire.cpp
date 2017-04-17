@@ -57,6 +57,12 @@ string Annuaire::reqAnnuaireFormate() const
 	}
 	return annuaire.str();
 }
+
+bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const;
+	{
+		
+	}
+	
 /**
  * \brief Ajoute une nouvelle personne à l'annuaire
  *
