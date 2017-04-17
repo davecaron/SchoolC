@@ -2,7 +2,7 @@
 /**
  * \file PersonneException.h
  * \brief Header de la classe Personne
- * \author Charles-David Lachance
+ * \author Charles-David Lachance et Dave Caron
  */
 
 
