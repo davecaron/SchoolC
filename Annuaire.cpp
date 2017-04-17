@@ -62,15 +62,12 @@ bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const;
 {
 	for(unsigned int i = 0; i < m_vMembres.size(); i++)
 	{
-		if (m_Membres[i] == p_personne)
+		if (m_vMembres[i] == p_personne)
 		{
 			return true;
 		}
-		else
-		{
-			return false;
-		}
 	}
+	return false
 }
 	
 /**
