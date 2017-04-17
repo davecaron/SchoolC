@@ -1,6 +1,6 @@
 /**
- * \file PersonneException.h
- * \brief Header de la classe Personne
+ * \file PersonneDejaPresenteException.h
+ * \brief Header de la classe PersonneDejaPresenteException
  * \author Charles-David Lachance et Dave Caron
  */
 
@@ -10,10 +10,10 @@
 
 namespace tp{
   
-  class PersonneException public PersonneException
+  class PersonneDejaPresenteException public PersonneException
   {
   public:
-  PersonneException(const std::string& raison);
+  PersonneDejaPresenteException(const std::string& raison);
   
   private:
   std::string& raison;
