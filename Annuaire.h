@@ -39,7 +39,7 @@ protected:
 	std::vector<Personne*> m_vMembres;
 
 private:
-	bool PersonneEstDejaPresent(const Personne& p_personne) const;
+	bool PersonneEstDejaPresente(const Personne& p_personne) const;
 
 };
 }
