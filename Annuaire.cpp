@@ -67,7 +67,7 @@ bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const;
 			return true;
 		}
 	}
-	return false
+	return false;
 }
 	
 /**
@@ -80,7 +80,7 @@ void Annuaire::ajouterPersonne(const Personne& p_personne)
 	PRECONDITION(validerFormatNom(p_personne.reqNom()) == true)
 	PRECONDITION(validerFormatNom(p_personne.reqPrenom()) == true)
 	PRECONDITION(validerTelephone(p_personne.reqTelephone()) == true)
-	if (*this.PersonneEstDejaPresente(p_personne))
+	if (PersonneEstDejaPresente(p_personne))
 	{
 	//ici charles ici watashi no fuuka
 	}
