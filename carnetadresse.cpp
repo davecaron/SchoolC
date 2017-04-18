@@ -1,5 +1,6 @@
 #include "carnetadresse.h"
 #include "annuaire.h"
+#include <QtGui>
 
 CarnetAdresse::CarnetAdresse(QWidget *parent)
     : QWidget(parent)
