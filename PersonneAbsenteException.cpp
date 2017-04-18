@@ -1,3 +1,5 @@
+/*
+
 #include "PersonneAbsenteException.h"
 
 namespace tp
@@ -8,3 +10,4 @@ namespace tp
  {
  }
 }
+*/
