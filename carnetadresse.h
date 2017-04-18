@@ -1,4 +1,5 @@
 class CarnetAdresse : public QWidget
+
 {
     Q_OBJECT
 
