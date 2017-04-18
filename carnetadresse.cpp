@@ -1,10 +1,10 @@
 CarnetAdresse::CarnetAdresse(QWidget *parent)
     : QWidget(parent)
 {
-    QLabel *nameLabel = new QLabel(tr("Name:"));
+    QLabel *nameLabel = new QLabel(tr("Nom:"));
     nameLine = new QLineEdit;
 
-    QLabel *addressLabel = new QLabel(tr("Address:"));
+    QLabel *addressLabel = new QLabel(tr("Annuaire:"));
     addressText = new QTextEdit;
     
     QGridLayout *mainLayout = new QGridLayout;
@@ -14,5 +14,5 @@ CarnetAdresse::CarnetAdresse(QWidget *parent)
     mainLayout->addWidget(addressText, 1, 1);
     
     setLayout(mainLayout);
-    setWindowTitle(tr("Simple Address Book"));
+    setWindowTitle(tr("Annuaire"));
 }
