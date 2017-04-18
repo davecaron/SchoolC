@@ -14,6 +14,7 @@ namespace tp{
  class PersonneException: public std::runtime_error
 {
 public:
+
 	PersonneException(const std::string& raison): std::runtime_error(raison){};
 
 //private:
