@@ -33,6 +33,9 @@ public:
 
 	/*Destructeur*/
 	virtual ~Annuaire();
+	
+	/*Méthode pour enlevé une personne dans l'annuaire*/
+	void supprimerPersonne(const std::string& p_nom, const std::string& p_prenom);
 
 protected:
 	std::string m_nomClub;
