@@ -92,12 +92,12 @@ void Annuaire::ajouterPersonne(const Personne& p_personne)
 	
 	void supprimerPersonne (const std::string& p_nom, const std::string& p_prenom); 
 	{
-		for (unsigned i = 0; i < m_nMembres.size(); i++)
+		for (unsigned i = 0; i < m_vMembres.size(); i++)
 		{
-			if ((m_nom == m_nMembres.reqNom() && m_prenom == m_nMembres.reqPrenom())
+			if ((p_nom == m_vMembres.reqNom()) && (p_prenom == m_vMembres.reqPrenom()))
 			    {
 				    
-				    delete m_nMembres[i];    //ici c'est sketch
+				    delete m_vMembres[i];    //ici c'est sketch
 					    
 				        m_vMembres.erase(i);
 			    }
