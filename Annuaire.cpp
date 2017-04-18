@@ -58,9 +58,10 @@ string Annuaire::reqAnnuaireFormate() const
 	return annuaire.str();
 }
 
-bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const;
+
+bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const
 {
-	for(unsigned int i = 0; i < m_vMembres.size(); i++)
+	for (unsigned int i = 0; i < m_vMembres.size(); i++)
 	{
 		if (m_vMembres[i] == p_personne)
 		{
@@ -69,7 +70,7 @@ bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const;
 	}
 	return false;
 }
-	
+
 /**
  * \brief Ajoute une nouvelle personne à l'annuaire
  *
@@ -82,36 +83,28 @@ void Annuaire::ajouterPersonne(const Personne& p_personne)
 	PRECONDITION(validerTelephone(p_personne.reqTelephone()) == true)
 	if (PersonneEstDejaPresente(p_personne))
 	{
-	//ici charles ici watashi no fuuka
+		//ici charles ici watashi no fuuka
 	}
 	else
 	{
-		m_vMembres.push_back(p_personne.clone());
+		Annuaire::m_vMembres.push_back(p_personne.clone());
 	}
 }
-	
-	void supprimerPersonne (const std::string& p_nom, const std::string& p_prenom); 
-	{
-		for (unsigned i = 0; i < m_vMembres.size(); i++)
-		{
-			if ((p_nom == m_vMembres.reqNom()) && (p_prenom == m_vMembres.reqPrenom()))
-			    {
-				    
-				    delete m_vMembres[i];    //ici c'est sketch
-					    
-				        m_vMembres.erase(i);
-			    }
-		}
-		//exeception personne not found ici
-	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
+void Annuaire::supprimerPersonne(const std::string& p_nom,
+		const std::string& p_prenom)
+{
+	for (unsigned int i = 0; i < Annuaire::m_vMembres.size(); i++)
+	{
+		if ((p_nom == Annuaire::m_vMembres[i]->reqNom())
+				and (p_prenom == Annuaire::m_vMembres[i]->reqPrenom()))
+		{
+			delete Annuaire::m_vMembres[i];    //ici c'est sketch
+			Annuaire::m_vMembres.erase(Annuaire::m_vMembres.begin() + i);
+		}
+	}
+	//exeception personne not found ici
 }
+
+}
+
