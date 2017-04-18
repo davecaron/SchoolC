@@ -30,7 +30,11 @@ Annuaire::Annuaire(const string& p_nomClub) :
  */
 Annuaire::~Annuaire()
 {
-
+	for (unsigned int i; i < Annuaire::m_vMembres.size(); i++)
+	{
+		delete m_vMembres[i];
+	}
+	m_vMembres.clear();
 }
 /**
  * \brief Requiers le nom d'un objet Annuaire
