@@ -11,14 +11,14 @@
 
 namespace tp{
   
-  class PersonneException public std::runtime_error
-  {
-  public:
-  PersonneException(const std::string& raison);
-  
-  private:
-  std::string& raison;
-  };
-  }
+ class PersonneException: public std::runtime_error
+{
+public:
+	PersonneException(const std::string& raison);
+
+//private:
+//std::string& raison;
+};
+}
 
 #endif
