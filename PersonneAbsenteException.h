@@ -13,10 +13,10 @@ namespace tp{
   class PersonneAbsenteException public PersonneException
   {
   public:
-  PersonneAbsenteException(const std::string& raison);
+  PersonneAbsenteException(const std::string& raison): runtime_error(raison){};
   
-  private:
-  std::string& raison;
+//private:
+  //std::string& raison;
   };
   }
 
