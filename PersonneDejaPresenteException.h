@@ -13,10 +13,10 @@ namespace tp{
   class PersonneDejaPresenteException public PersonneException
   {
   public:
-  PersonneDejaPresenteException(const std::string& raison);
+  PersonneDejaPresenteException(const std::string& raison): std::runtime_error(raison){};
   
-  private:
-  std::string& raison;
+ // private:
+  //std::string& raison;
   };
   }
 
