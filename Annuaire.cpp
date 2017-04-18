@@ -67,7 +67,7 @@ bool Annuaire::PersonneEstDejaPresente(const Personne& p_personne) const;
 			return true;
 		}
 	}
-	return false
+	return false;
 }
 	
 /**
